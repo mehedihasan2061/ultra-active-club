@@ -18,7 +18,7 @@ const Cards = () => {
         </div>
         <div className="info-container">
           <div>
-            <img src="../../mh_rajon-removebg-preview.png" alt="" />
+                <img src= "../../mh_rajon-removebg-preview.png" alt="" />
             <p>
               <small>Mehedi Hasan</small>
             </p>
@@ -42,11 +42,11 @@ const Cards = () => {
           </div>
           {/* add a break  */}
           <div>
-            <h6 className="p-2 bg-primary text-white rounded my-3">
+            <h6 className="p-2 bg-primary text-white shadow-lg rounded my-3">
               Add a Break
             </h6>
-            <div className="timer">
-              <p className="time">10m</p>
+            <div className="timer">            
+              <p className="time">10m</p>              
               <p className="time">15m</p>
               <p className="time">20m</p>
               <p className="time">30m</p>
