@@ -1,0 +1,30 @@
+.container{
+    display: grid;
+    grid-template-columns: 4fr 1fr ;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 5px;
+    
+}
+.card-container img{
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+}
+.card-container button{
+    border: none;
+    background-color:blueviolet;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    
+
+}
+.card-container button:hover{
+    background-color: chocolate;
+}
