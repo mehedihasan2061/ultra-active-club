@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
 import './Cards.css'
 import Swal from "sweetalert2";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 
 
 const Cards = () => {
@@ -39,14 +41,17 @@ const Cards = () => {
             ></Activity>
           ))}
         </div>
+
+
         <div className="info-container">
           <div>
-            <img src="#" alt="" />
+            <img src="../../mh_rajon-removebg-preview.png" alt="" />
             <p>
-              <small>Mehedi Hasan</small>
+              <small className='px-2'>Mehedi Hasan</small>
             </p>
             <p>
-              <small>Mymensingh,Bangladesh</small>
+              <FontAwesomeIcon icon={faLocationArrow}></FontAwesomeIcon>
+              <small className='px-2'>Mymensingh,Bangladesh</small>
             </p>
           </div>
           <div className="personal-info">
@@ -83,7 +88,7 @@ const Cards = () => {
             </h5>
             <small className="time-calc">Exercise time : {totalTime} m</small>
             <br />
-            <small className="time-calc">Break time : 0 min</small>
+            <small className="time-calc">Break time : 0 m</small>
           </div>
           <button onClick={() => addToToast()} className="activity-btn">Activity Complete</button>
         </div>
