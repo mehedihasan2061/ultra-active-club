@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Activity = ({ activity, addToList }) => {
   
   const { body, time, picture, age, title } = activity;

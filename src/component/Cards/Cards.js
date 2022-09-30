@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
 import './Cards.css'
+import Swal from "sweetalert2";
 
 
 const Cards = () => {
@@ -21,6 +22,13 @@ const Cards = () => {
     (partial, current) => partial + current,
     0
   );
+  const addToToast = (id) => {
+    Swal.fire(
+  'Successfully!',
+  'Activity Completed!',
+  'success'
+)
+  }
     return (
       <div className="container">
         <div className="card-container">
@@ -77,7 +85,7 @@ const Cards = () => {
             <br />
             <small className="time-calc">Break time : 0 min</small>
           </div>
-          <button className="activity-btn">Activity Complete</button>
+          <button onClick={() => addToToast()} className="activity-btn">Activity Complete</button>
         </div>
       </div>
     );
